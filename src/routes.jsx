@@ -5,6 +5,7 @@ import AllGroup from "./pages/AllGroup";
 import CreateGroup from "./pages/CreateGroup";
 import MyGroup from "./pages/MyGroup";
 import Login from "./pages/Login";
+import SingUp from "./pages/SingUp";
 
 export const router = createBrowserRouter([
     {
@@ -16,24 +17,24 @@ export const router = createBrowserRouter([
             element:<Home></Home>
         },
         {
-           path:'allGroup',
+           path:'/allGroup',
            element:<AllGroup></AllGroup>
         },
         {
-            path:'createGroup',
+            path:'/createGroup',
             element:<CreateGroup></CreateGroup>
         },
         {
-            path:'myGroup',
+            path:'/myGroup',
             element:<MyGroup></MyGroup>
         },
         {
-            path:'login',
+            path:'/login',
             element:<Login></Login>
         },
         {
-            path:'signup',
-            element:<Login></Login>
+            path:'/signup',
+            element:<SingUp></SingUp>
         }
       ]
     }

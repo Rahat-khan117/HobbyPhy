@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
     return (
-        <div>
+    <div>
         <div>
         <div className="carousel w-full h-[500px]">
           <div id="slide1" className="carousel-item relative w-full">
@@ -128,8 +128,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
         </div>
+
+    </div>
     );
 };
 

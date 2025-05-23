@@ -45,7 +45,7 @@ const Navbar = ({handleMenu}) => {
                  <img className='h-[50px] w-[50px] rounded-2xl' src="https://i.ibb.co.com/whg4kN1z/logo.jpg" />
                  <p className='text-green-600 lg:text-4xl md:text-3xl text-4xl font-bold'>HOBBY<span className='text-black'>phy</span></p>
                </div>
-               <div className='md:flex items-center xl:gap-16 lg:gap-10 md:gap-4 hidden '>
+               <div className='lg:flex items-center xl:gap-16 lg:gap-10 md:gap-4 hidden '>
                  <NavLink to="/allGroup" className={({isActive})=>(isActive ? "cursor-pointer pb-2 text-green-500 border-b-2 border-green-500" : "cursor-pointer")}>
                  <div className='text-2xl flex items-center'>
                  <p>All Group</p>
@@ -86,7 +86,7 @@ const Navbar = ({handleMenu}) => {
                  </div>
                  
                </div>
-               <div className='md:hidden block text-3xl'>
+               <div className='lg:hidden block text-3xl'>
                <i onClick={handleMenu} className="fa-solid fa-bars "></i>
                </div>
             </div>

@@ -26,7 +26,9 @@ export const router = createBrowserRouter([
         },
         {
             path:'/myGroup',
-            element:<MyGroup></MyGroup>
+            element:<MyGroup></MyGroup>,
+            loader:() => fetch('http://localhost:3000/createGroup')
+    
         },
         {
             path:'/login',

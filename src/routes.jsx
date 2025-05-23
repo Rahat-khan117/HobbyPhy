@@ -28,7 +28,7 @@ export const router = createBrowserRouter([
         {
             path:'/myGroup',
             element:<MyGroup></MyGroup>,
-            loader:() => fetch('http://localhost:3000/createGroup')
+            loader:() => fetch('https://assignment-serverside.vercel.app/createGroup')
     
         },
         {
@@ -42,7 +42,7 @@ export const router = createBrowserRouter([
         {
             path:'/updateGroup/:id',
             element:<UpdateGroup></UpdateGroup>,
-            loader:() => fetch('http://localhost:3000/createGroup')
+            loader:() => fetch('https://assignment-serverside.vercel.app/createGroup')
         }
       ]
     }

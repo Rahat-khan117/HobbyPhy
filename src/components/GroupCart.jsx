@@ -29,7 +29,7 @@ const GroupCart = ({ group }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         // start deleting group
-        fetch(`http://localhost:3000/createGroup/${_id}`, {
+        fetch(`https://assignment-serverside.vercel.app/createGroup/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

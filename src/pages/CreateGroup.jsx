@@ -38,7 +38,7 @@ const CreateGroup = () => {
 
 
         // send data to the server
-        fetch('http://localhost:3000/createGroup',{
+        fetch('https://assignment-serverside.vercel.app/createGroup',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

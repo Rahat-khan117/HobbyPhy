@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useNavigate } from 'react-router';
+import { valueContext } from '../Layout/MainLayout';
+import Swal from 'sweetalert2';
 
 const GroupBox = ({group}) => {
+    const {userN} = useContext(valueContext)
     const navigate = useNavigate();
     const handleClick = (id) => {
-        navigate(`/groupDetails/${id}`)
+            if (userN) {
+                navigate(`/groupDetails/${id}`)
+              } else {
+                Swal.fire({
+                    title: 'warning!',
+                    text: 'Please Log in to access the page.',
+                    icon: 'warning',
+                    confirmButtonText: 'OK'
+                  });
+                 (navigate("/login"))
+             }        
     }
     return (
         <div  className='bg-white rounded-xl px-4 py-4 '>

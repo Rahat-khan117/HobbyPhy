@@ -8,11 +8,13 @@ import Login from "./pages/Login";
 import SingUp from "./pages/SingUp";
 import UpdateGroup from "./pages/UpdateGroup";
 import GroupDetails from "./pages/GroupDetails";
+import Error from "./components/Error";
 
 export const router = createBrowserRouter([
     {
         path:'/',
         element:<MainLayout></MainLayout>,
+        errorElement:<Error></Error>,
         children:[
         {
             path:'/',

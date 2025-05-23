@@ -142,6 +142,12 @@ const Home = () => {
              </div>
            </div>
         </div>
+        <div className='mt-10 px-4 sm:px-7 md:px-12 lg:px-20'>
+            <p className='font-bold text-3xl text-center'>Create Your won Group</p>
+            <div className='bg-white rounded-2xl px-4 py-4 mt-4'>
+               <img className='rounded-2xl w-full ' src="https://i.ibb.co/Hwn1XbP/7.jpg"/>
+            </div>
+        </div>
 
     </div>
     );

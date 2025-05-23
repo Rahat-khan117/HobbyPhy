@@ -7,6 +7,7 @@ import MyGroup from "./pages/MyGroup";
 import Login from "./pages/Login";
 import SingUp from "./pages/SingUp";
 import UpdateGroup from "./pages/UpdateGroup";
+import GroupDetails from "./pages/GroupDetails";
 
 export const router = createBrowserRouter([
     {
@@ -15,11 +16,13 @@ export const router = createBrowserRouter([
         children:[
         {
             path:'/',
-            element:<Home></Home>
+            element:<Home></Home>,
+            loader:()=> fetch('../group.json')
         },
         {
            path:'/allGroup',
-           element:<AllGroup></AllGroup>
+           element:<AllGroup></AllGroup>,
+           loader:()=> fetch('../group.json')
         },
         {
             path:'/createGroup',
@@ -43,6 +46,11 @@ export const router = createBrowserRouter([
             path:'/updateGroup/:id',
             element:<UpdateGroup></UpdateGroup>,
             loader:() => fetch('https://assignment-serverside.vercel.app/createGroup')
+        },
+        {
+            path:'/groupDetails/:id',
+            element:<GroupDetails></GroupDetails>,
+            loader:()=> fetch('../group.json')
         }
       ]
     }

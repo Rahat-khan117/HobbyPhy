@@ -1,6 +1,9 @@
 import React from 'react';
+import Featured from '../components/Featured';
+import { useLoaderData } from 'react-router';
 
 const Home = () => {
+    const groups = useLoaderData();
     return (
     <div>
         <div>
@@ -128,6 +131,16 @@ const Home = () => {
             </div>
           </div>
         </div>
+        </div>
+        <div className='mt-12 sm:px-14 lg:px-20 px-4'>
+           <p className='text-3xl font-bold'>Our Featured Groups</p>
+           <div className='flex justify-center mt-4'>
+             <div className='grid md:grid-cols-3 sm:grid-cols-2 gap-5 '>
+                {
+                    groups.map(group => <Featured group={group}></Featured>)
+                }
+             </div>
+           </div>
         </div>
 
     </div>

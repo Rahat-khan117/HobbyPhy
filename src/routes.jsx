@@ -6,6 +6,7 @@ import CreateGroup from "./pages/CreateGroup";
 import MyGroup from "./pages/MyGroup";
 import Login from "./pages/Login";
 import SingUp from "./pages/SingUp";
+import UpdateGroup from "./pages/UpdateGroup";
 
 export const router = createBrowserRouter([
     {
@@ -37,6 +38,11 @@ export const router = createBrowserRouter([
         {
             path:'/signup',
             element:<SingUp></SingUp>
+        },
+        {
+            path:'/updateGroup/:id',
+            element:<UpdateGroup></UpdateGroup>,
+            loader:() => fetch('http://localhost:3000/createGroup')
         }
       ]
     }

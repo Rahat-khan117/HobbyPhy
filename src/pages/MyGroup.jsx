@@ -4,7 +4,6 @@ import GroupCart from "../components/GroupCart";
 
 const MyGroup = () => {
   const groups = useLoaderData();
-  console.log(groups);
   return (
     <div className="sm:px-10 px-5">
       <p className="font-bold text-4xl text-center mt-7">My Created Groups</p>
@@ -24,7 +23,7 @@ const MyGroup = () => {
         </div>
         <div className={` ${groups.length == 0 ? "hidden" : ""}`}>
             {groups.map((group) => (
-          <GroupCart group={group}></GroupCart>
+          <GroupCart group={group} key={group._id}></GroupCart>
         ))}
         </div>
       </div>

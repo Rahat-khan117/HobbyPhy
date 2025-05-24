@@ -22,6 +22,8 @@ const Navbar = ({handleMenu}) => {
              }
             
         }
+
+        
     const handleMyG = () => {
              if (userN) {
                 navigate("/myGroup")

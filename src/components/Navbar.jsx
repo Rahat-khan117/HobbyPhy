@@ -2,6 +2,7 @@ import React, { useContext} from 'react';
 import { NavLink, useLocation, useNavigate} from 'react-router';
 import Swal from 'sweetalert2';
 import { valueContext } from '../Layout/MainLayout';
+import { Tooltip } from 'react-tooltip';
 
 const Navbar = ({handleMenu}) => {
     const {pathname} = useLocation()
@@ -85,8 +86,12 @@ const Navbar = ({handleMenu}) => {
                  
                    </div>
                  <div className='relative group inline-block cursor-pointer'> 
-                    <img className='h-[50px] w-[50px] rounded-full' src={userN ? userN.photoURL : "https://i.ibb.co/8DXdyrBh/download.png" }/>
-                    <div><p className='absolute hidden group-hover:block bg-black text-white text-sm rounded px-2 py-1 top-full left-1/2 -translate-x-1/2 mt-1 whitespace-nowrap'>{userN ? userN.displayName : ""}</p></div>
+                    <a href="#" className='hover'>
+                      <img className='h-[50px] w-[50px] rounded-full' src={userN ? userN.photoURL : "https://i.ibb.co/8DXdyrBh/download.png" }/>
+                    </a>
+                    <Tooltip anchorSelect=".hover" place="bottom">
+                      {userN? userN.displayName : 'No user'}
+                   </Tooltip> 
                  </div>
                  </div>
                  

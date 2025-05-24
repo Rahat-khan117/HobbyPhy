@@ -48,7 +48,7 @@ const Home = () => {
                 </p>
                 <div className="flex mt-4">
                   <button className="text-white border-2 border-whit w-[140px] h-[45px] rounded-tl-2xl rounded-bl-2xl text-xl cursor-pointer hover:bg-white hover:text-black">
-                    <i class="fa-brands fa-wpexplorer"></i>
+                    <i className="fa-brands fa-wpexplorer"></i>
                     <span className="ml-1">Explore</span>
                   </button>
                   <button className="text-white border-2 border-white w-[140px] h-[45px] rounded-tr-2xl rounded-br-2xl text-xl cursor-pointer hover:bg-white hover:text-black">

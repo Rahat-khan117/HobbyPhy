@@ -60,14 +60,14 @@ const GroupDetails = () => {
           <p className="text-[#00000086] font-bold mt-4">
           Meeting Location : {machDetails.meeting_location}
           </p>
-          <div className="border-t-1 border-t-[#00000095] border-dashed mt-5 md:w-full w-[100px]">
+          <div className="border-t-1 border-t-[#00000095] border-dashed sm:mt-5 mt-2 md:w-full w-[100px]">
             <hr />
           </div>
           <div className="flex gap-1 items-center mt-3">
-            <p className="font-bold text-xl">start date: <span className="ml-1 font-bold">{machDetails.start_date}</span>
+            <p className="font-bold sm:text-xl text-[16px]">start date: <span className="ml-1 font-bold">{machDetails.start_date}</span>
             </p>
           </div>
-          <div className="border-t-1 border-dashed border-t-[#00000095] mt-5 md:w-full w-[100px]">
+          <div className="border-t-1 border-dashed border-t-[#00000095] sm:mt-5 mt-2 md:w-full w-[100px]">
             <hr />
           </div>
           

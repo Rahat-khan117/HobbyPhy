@@ -15,10 +15,14 @@ const Error = () => {
             <button className="btn bg-[#176AE5] text-white rounded-xl ">Go Back Home</button>
             </Link> 
             </div>
+
+
+            
             
         </div>
 
 
+        
 
 
         

@@ -10,8 +10,8 @@ const Footer = () => {
       <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
         <div className="lg:w-1/3">
         <div onClick={()=> navigate("/")} className='flex items-center gap-2 cursor-pointer'>
-                 <img className='h-[50px] w-[50px] rounded-2xl' src="https://i.ibb.co.com/whg4kN1z/logo.jpg" />
-                 <p className='text-green-600 text-4xl font-bold'>HOBBY<span className='text-white'>phy</span></p>
+                 <img className='h-[50px] w-[50px] rounded-2xl' src="https://i.ibb.co/Kc9YPDWK/logo.jpg" />
+                 <p className='text-purple-600 text-4xl font-bold'>HOBBY<span className='text-white'>phy</span></p>
                </div>
         </div>
         <div className="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-2/3 sm:grid-cols-4">

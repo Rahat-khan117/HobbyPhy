@@ -48,8 +48,8 @@ const Navbar = ({handleMenu}) => {
             <div className='relative  w-full flex justify-between items-center'>
                
                <div onClick={()=> navigate("/")} className='flex items-center gap-2 cursor-pointer'>
-                 <img className='h-[50px] w-[50px] rounded-2xl' src="https://i.ibb.co.com/whg4kN1z/logo.jpg" />
-                 <p className='text-green-600 lg:text-4xl md:text-3xl text-4xl font-bold'>HOBBY<span className='text-white'>phy</span></p>
+                 <img className='h-[50px] w-[50px] rounded-2xl' src="https://i.ibb.co/Kc9YPDWK/logo.jpg" />
+                 <p className='text-purple-600 lg:text-4xl md:text-3xl text-4xl font-bold'>HOBBY<span className='text-white'>phy</span></p>
                </div>
                <div className='lg:flex items-center xl:gap-16 lg:gap-10 md:gap-4 hidden '>
                  <NavLink to="/allGroup" className={({isActive})=>(isActive ? "cursor-pointer pb-2 text-green-500 border-b-2 border-green-500" : "cursor-pointer")}>

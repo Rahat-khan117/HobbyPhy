@@ -15,7 +15,7 @@ const Login = () => {
      
     }
     return (
-         <div className="flex justify-center mt-6">
+         <div className="flex justify-center mt-6 pb-10">
       <div className="w-full max-w-md bg-white p-4 rounded-md shadow sm:p-8 dark:bg-gray-50 dark:text-gray-800">
         <h2 className="mb-3 text-3xl font-semibold text-center">
           Login to your account

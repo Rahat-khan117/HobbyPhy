@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext} from 'react';
 import { NavLink, useLocation, useNavigate} from 'react-router';
 import Swal from 'sweetalert2';
 import { valueContext } from '../Layout/MainLayout';
@@ -6,7 +6,7 @@ import { valueContext } from '../Layout/MainLayout';
 const Navbar = ({handleMenu}) => {
     const {pathname} = useLocation()
     const navigate = useNavigate()
-    const {userN,handleLogout} = useContext(valueContext)
+    const {userN,handleLogout,handleTheme,theme} = useContext(valueContext)
     
     const handleCreateG = () => {
              if (userN) {
@@ -37,13 +37,16 @@ const Navbar = ({handleMenu}) => {
             
         }
 
+
+        
+
     return (
-        <div className='bg-[#d5ead2]  h-[70px] w-[100vw] flex items-center px-4 lg:px-12  '>
+        <div className={`  h-[70px] w-[100vw] flex items-center px-4 lg:px-12 ${theme ? 'bg-[#000000d2] text-white':'bg-[#d5ead2] text-black'}`} >
             <div className='relative  w-full flex justify-between items-center'>
                
                <div onClick={()=> navigate("/")} className='flex items-center gap-2 cursor-pointer'>
                  <img className='h-[50px] w-[50px] rounded-2xl' src="https://i.ibb.co.com/whg4kN1z/logo.jpg" />
-                 <p className='text-green-600 lg:text-4xl md:text-3xl text-4xl font-bold'>HOBBY<span className='text-black'>phy</span></p>
+                 <p className='text-green-600 lg:text-4xl md:text-3xl text-4xl font-bold'>HOBBY<span className='text-white'>phy</span></p>
                </div>
                <div className='lg:flex items-center xl:gap-16 lg:gap-10 md:gap-4 hidden '>
                  <NavLink to="/allGroup" className={({isActive})=>(isActive ? "cursor-pointer pb-2 text-green-500 border-b-2 border-green-500" : "cursor-pointer")}>
@@ -86,10 +89,15 @@ const Navbar = ({handleMenu}) => {
                  </div>
                  
                </div>
-               <div className='lg:hidden block text-3xl'>
+               
+               
+            </div>
+            <button onClick={handleTheme} className='ml-3'>
+                 <img className='h-[30px]' src="../theme-btn.png"/>
+             </button>
+             <div className='lg:hidden block text-3xl ml-5'>
                <i onClick={handleMenu} className="fa-solid fa-bars "></i>
                </div>
-            </div>
         </div>
     );
 };

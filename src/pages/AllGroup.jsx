@@ -5,7 +5,7 @@ import GroupBox from '../components/GroupBox';
 const AllGroup = () => {
     const groups = useLoaderData();
     return (
-        <div>
+        <div className='pb-10'>
             <div className='mt-12 sm:px-14 lg:px-20 px-4'>
            <p className='text-3xl font-bold text-center'>Our Featured Groups</p>
            <div className='flex justify-center mt-4'>

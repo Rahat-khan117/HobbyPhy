@@ -33,7 +33,7 @@ const SingUp = () => {
         
     }
     return (
-        <div className="flex justify-center mt-5">
+        <div className="flex justify-center mt-5 pb-10">
         <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800 bg-white">
       <div className="mb-8 text-center">
         <h1 className="my-3 text-4xl font-bold">Sign up here </h1>

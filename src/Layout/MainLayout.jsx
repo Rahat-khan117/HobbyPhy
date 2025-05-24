@@ -125,12 +125,20 @@ const handleLogout = () => {
           
     }
 
+    // for theme..........................................................
+        const [theme , setTheme] = useState(false);
+        const handleTheme = () => {
+            setTheme(!theme)
+        }
+
 const contextValues = {
     googleLogin,
     handleSignup,
     handleLogin,
     userN,
-    handleLogout
+    handleLogout,
+    handleTheme,
+    theme
 }
 
 
@@ -149,13 +157,14 @@ console.log(userN);
               <div className={ menu ? "fixed top-[70px] right-0 z-20" : "hidden"}>
                <Menu></Menu>
              </div>
-              <div className='min-h-[calc(100vh-240px)] pb-10 pt-[70px] bg-[#EFEFEF]'>
+              <div className='min-h-[calc(100vh-240px)]  pt-[70px] bg-[#EFEFEF]'>
                 <Outlet></Outlet>
               </div>
-            </valueContext.Provider>
-            <div>
+              <div>
                 <Footer></Footer>
             </div>
+            </valueContext.Provider>
+            
         </div>
     );
 };

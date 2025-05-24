@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Featured from '../components/Featured';
 import { useLoaderData } from 'react-router';
+import { valueContext } from '../Layout/MainLayout';
 
 const Home = () => {
+    const {theme} = useContext(valueContext);
     const groups = useLoaderData();
     return (
-    <div>
+    <div className={theme ? 'bg-[#000000d2] text-white pb-10': 'pb-10'}>
         <div>
         <div className="carousel w-full h-[500px]">
           <div id="slide1" className="carousel-item relative w-full">

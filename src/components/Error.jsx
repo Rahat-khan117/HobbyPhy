@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 const Error = () => {
     return (
-        <div>
+        <div className='h-[100vh]'>
             <div className='flex items-center justify-center px-4'>
             <div className='flex flex-col gap-6 items-center mt-10'>
             <img className='h-[300px] w-[250px]' src="https://i.ibb.co/Kjy5YsG3/404-page-not-found-illustration-2048x1985-6voscfd3.png"/>

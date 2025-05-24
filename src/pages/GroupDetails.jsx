@@ -32,7 +32,7 @@ const GroupDetails = () => {
         },1000)
     }
     return (
-        <div className='mt-10 px-4 sm:px-10 lg:px-20'>
+        <div className='mt-10 px-4 sm:px-10 lg:px-20 pb-10'>
             <p className="text-4xl text-center font-bold">{machDetails.group_name}</p>
       <p className="text-center text-[#0000009f] mt-3">
         {machDetails.description}

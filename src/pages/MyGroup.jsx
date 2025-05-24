@@ -5,7 +5,7 @@ import GroupCart from "../components/GroupCart";
 const MyGroup = () => {
   const groups = useLoaderData();
   return (
-    <div className="sm:px-10 px-5">
+    <div className="sm:px-10 px-5 pb-10">
       <p className="font-bold text-4xl text-center mt-7">My Created Groups</p>
 
       <div className="bg-white rounded-3xl px-5 py-7 mt-4">

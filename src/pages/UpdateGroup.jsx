@@ -38,7 +38,7 @@ const UpdateGroup = () => {
   };
 
   return (
-    <div className="container mx-auto sm:px-12 px-4">
+    <div className="container mx-auto sm:px-12 px-4 pb-10">
       <div className="bg-[#331a152a] mt-10 sm:px-12 px-6 py-9 rounded-3xl">
         <div>
           <p className="font-bold text-5xl text-[#331A15] text-center">

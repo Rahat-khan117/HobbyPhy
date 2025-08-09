@@ -107,3 +107,6 @@ You can use a modal to update group details instead of navigating to a separate 
 
 also added...
 404 Not Found Page
+
+
+<img class="banne" style="height: 65vh; width: 100vw;" src="https://i.ibb.co.com/8gFKD3zS/Screenshot-2025-08-09-183159.png" alt="Banner" />
